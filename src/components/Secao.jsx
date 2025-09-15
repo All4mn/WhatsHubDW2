@@ -4,30 +4,63 @@ export default function Secao() {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.gerador}>
+        <section className={styles.gerador}>
           <h2 className={styles.titulo}>Gerador de Links</h2>
 
-          <section>
+          <div>
             <p>Numero do Whatsapp</p>
-            <input type="text" />
+            <input type="text" placeholder="Número" />
+          </div>
+          <div>
             <p>Mensagem(opcional)</p>
-            <input type="text" name="" id="" />
+            <textarea
+              name=""
+              id=""
+              placeholder="Digite sua mensagem aqui..."
+            ></textarea>
+          </div>
+          <button className={styles.enviar}>Preparar mensagem</button>
+
+
+          <section className={styles.link_container}>
+            <p>Link gerado:</p>
+            <div className={styles.final_link}>
+            <input type="text" placeholder="abc123abc123"/>
+            <button className={styles.copiar}>icon</button>
+            </div>
+            <button className={styles.abrir_whatsapp}>Abrir Whatsapp</button>
+
           </section>
-        </div>
+        </section>
 
         <div className={styles.gerador}>
           <h2 className={styles.titulo}>Agenda de contatos</h2>
 
           <section className={styles.agenda_container}>
+            
             <div>
               <p>Nome</p>
-              <input type="text" />
+              <input type="text" placeholder="Nome" />
             </div>
             <div>
               <p>Numero</p>
-              <input type="text" />
+              <input type="text" placeholder="Numero" />
             </div>
+
           </section>
+            <button className={styles.salvar_na_agenda}>Salvar na Agenda</button>
+
+            <h4>Seus contatos(0)</h4>
+
+            <section className={styles.contatos}>
+                <div>
+                    <p>Mateus</p>
+                    <p>(44) 99921-9153</p>
+                </div>
+                <button>Mensagem</button>
+                <button>Editar</button>
+                <button>Icon</button>
+            </section>
         </div>
       </div>
     </>

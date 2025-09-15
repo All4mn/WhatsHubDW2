@@ -7,18 +7,83 @@
 }
 
 .gerador{
-    padding: 30px;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding: 1.875rem;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: .5rem;
     width: 500px;
-}
+        input{
+            padding:5px 0px 5px 5px;
+            border-radius: 3px;
+            border-style:solid;
+            width: 100%;
+            background-color: #f7f6f9;
+            border: 1px solid gray;
+        }
 
-
-.titulo{
-    margin-bottom: 1.125rem;
+        textarea{
+            padding: 5px 0px 5px 5px;
+            border-radius: 3px;
+            border-style: solid;
+            width: 100%;
+            background-color: #f7f6f9;
+        }
 }
 
 .agenda_container{
     display: flex;
     justify-content: space-between;
 }
+
+.enviar{
+    background-color: #1ac257;
+    border-radius: 3px;
+    padding: 15px;
+    width: 100%;
+    color: white;
+    border-style: none;
+}
+
+.link_container{
+    border: 1px solid gray;
+    background-color:#f7f6f9 ;
+    padding: .9375rem;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .copiar{
+        padding: 3px;
+        border-radius: 3px;
+        border: 1px solid gray;
+    }
+}
+
+.final_link{
+    display: flex;
+    gap: 10px;
+}
+
+.abrir_whatsapp{
+    background-color: #1ac257;
+    color: white;
+    border-style: none;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.salvar_na_agenda{
+    padding: 0.5rem;
+
+}
+.contatos{
+    padding: 20px;
+    background-color: #f7f6f9;
+    border:1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+
