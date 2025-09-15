@@ -1,0 +1,15 @@
+.titulo{
+    color: green;
+    font-weight: 600;
+}
+
+.subtitulo{
+    font-weight: 400;
+}
+
+.cabecalho{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

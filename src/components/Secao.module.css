@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    /* background-color: aquamarine; */
+    justify-content: center;
+    gap: 1.25rem;
+    margin-top: 3.125rem;
+}
+
+.gerador{
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: .5rem;
+    width: 500px;
+}
+
+
+.titulo{
+    margin-bottom: 1.125rem;
+}
+
+.agenda_container{
+    display: flex;
+    justify-content: space-between;
+}
