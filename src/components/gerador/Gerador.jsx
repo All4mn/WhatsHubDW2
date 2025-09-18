@@ -5,7 +5,6 @@ export default function Gerador() {
   return (
     <div>
       <section className={styles.gerador}>
-        {/* Componente Criar (dentro de Gerador) */}
         <Criar/>
 
         {/* Componente Compartilhar (dentro de Gerador) */}
