@@ -1,0 +1,7 @@
+.contatos{
+    padding: 20px;
+    background-color: #f7f6f9;
+    border:1px solid gray;
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,4 +1,4 @@
-.gerador{
+.agenda{
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
@@ -23,3 +23,8 @@
             background-color: #f7f6f9;
         }
 }
+
+/* 
+.titulo{
+    a fazer
+} */
