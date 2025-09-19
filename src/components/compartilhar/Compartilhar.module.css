@@ -1,0 +1,31 @@
+.link_container{
+    border: 1px solid gray;
+    background-color:#f7f6f9 ;
+    padding: .9375rem;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .copiar{
+        padding: 3px;
+        border-radius: 3px;
+        border: 1px solid gray;
+    }
+}
+
+.final_link{
+    display: flex;
+    gap: 10px;
+}
+
+/* .copiar{
+    a fazer
+} */
+
+.abrir_whatsapp{
+    background-color: #1ac257;
+    color: white;
+    border-style: none;
+    padding: 10px;
+    border-radius: 3px;
+}

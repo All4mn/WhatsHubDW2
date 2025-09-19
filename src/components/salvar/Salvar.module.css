@@ -1,0 +1,8 @@
+.agenda_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.salvar_na_agenda{
+    padding: 0.5rem;
+}
