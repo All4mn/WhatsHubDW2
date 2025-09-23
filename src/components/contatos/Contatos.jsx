@@ -6,7 +6,7 @@ export default function Contatos(){
             <h4>Seus contatos(1)</h4>
 
         <section className={styles.contatos}>
-          <div>
+          <div className={styles.dados}>
             <p>Mateus</p>
             <p>(44) 99921-9153</p>
           </div>
