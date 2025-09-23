@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300..700&display=swap');
 .agenda_container{
     display: flex;
     justify-content: space-between;
+    background-color: white;
 }
 
 .salvar_na_agenda{
     padding: 0.5rem;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 3px;
+    margin-top: 10px;
 }

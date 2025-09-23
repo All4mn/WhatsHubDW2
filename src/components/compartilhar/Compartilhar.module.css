@@ -1,6 +1,6 @@
 .link_container{
-    border: 1px solid gray;
-    background-color:#f7f6f9 ;
+    border: 1px solid rgb(236, 236, 236);
+    background-color: rgb(236, 236, 236);
     padding: .9375rem;
     border-radius: 3px;
     display: flex;
@@ -9,13 +9,19 @@
     .copiar{
         padding: 3px;
         border-radius: 3px;
-        border: 1px solid gray;
+        border: 1px solid rgb(236, 236, 236);
     }
+}
+
+.link_container p{
+    background-color: rgb(236, 236, 236);
 }
 
 .final_link{
     display: flex;
     gap: 10px;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(236, 236, 236);
 }
 
 /* .copiar{

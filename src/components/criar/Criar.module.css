@@ -1,9 +1,39 @@
-/* .titulo{
-    a fazer
-} */
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300..700&display=swap');
+
+.titulo{
+    font-family: "Questrial", sans-serif;
+    background-color: white;
+}
+
+svg{
+    max-width: 1.20rem;
+    max-height: 1.20rem;
+    fill: #1ac257;
+    background-color: white;
+}
+
+svg.bi-bi-chat{
+    background-color: white;
+
+}
+
+p{
+    font-family: "Questrial", sans-serif;
+    font-size: 0.9rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    background-color: white;
+}
+
+div input{
+    background-color: rgb(236, 236, 236);
+}
+
 
 .msg{
     resize: vertical;
+    font-family: "Questrial", sans-serif;
+    background-color: white;
 }
 
 .enviar{
@@ -12,5 +42,5 @@
     padding: 15px;
     width: 100%;
     color: white;
-    border-style: none;
+    border: .0625rem;
 }

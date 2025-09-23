@@ -1,16 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Questrial&family=Quicksand:wght@300..700&display=swap');
+
+svg{
+    height: 1.5625rem;
+    width: 1.5625rem;
+}
+
+.icon{
+    fill: #40C057;
+    max-width: 1.5625rem;
+    max-height: 1.5625rem;
+    display: inline-block;
+    text-align: center;
+    margin-top: .625rem;
+    background-color: rgb(236, 236, 236);
+}
+
 .titulo{
-    color: green;
-    font-weight: 600;
+    color: #40C057;
+    font-weight: bolder;
+    font-family: "Questrial", sans-serif;
 }
 
 .subtitulo{
     font-weight: 400;
+    font-size: medium;
+    font-family: "Questrial", sans-serif;
+    white-space: pre;
 }
 
 .cabecalho{
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 1rem;
     color:#606061
 }
+
