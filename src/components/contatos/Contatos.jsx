@@ -31,9 +31,10 @@ export default function Contatos() {
 
   // const editContato = async (id) => {
   //   try{
-      
+         
   //   }
   // }
+
   const deleteContato = async (id) => {
     if (!confirm("Tem certeza que deseja deletar este contato?")) {
       return;
