@@ -13,7 +13,7 @@ export default function Salvar() {
       alert("Preencha nome e número");
       return;
     }
-    if (novoContato.numero.trim() < 11) {
+    if (novoContato.numero.trim() < 12) {
       alert("Preencha com um número válido");
       return;
     }
