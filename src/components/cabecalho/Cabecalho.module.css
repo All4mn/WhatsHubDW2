@@ -1,18 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Questrial&family=Quicksand:wght@300..700&display=swap');
 
 svg{
-    height: 1.5625rem;
-    width: 1.5625rem;
+    height: 3rem;
+    width: 3rem;
 }
 
+path{
+    height: 2rem;
+    width: 2rem;
+    font-size: xx-large;
+}
 .icon{
     fill: #40C057;
-    max-width: 1.5625rem;
-    max-height: 1.5625rem;
+    width: 1.7rem;
+    height: 1.7rem;
     display: inline-block;
     text-align: center;
     margin-top: .625rem;
     background-color: rgb(236, 236, 236);
+    
 }
 
 .titulo{
@@ -32,7 +38,7 @@ svg{
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    margin-top: 1rem;
     color:#606061
 }
 

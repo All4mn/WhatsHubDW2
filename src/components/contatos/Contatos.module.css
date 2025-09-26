@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300..700&display=swap');
 .contatos{
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #f7f6f9;
     border:1px solid rgb(236, 236, 236);
     display: flex;
     justify-content: space-between;
-    border-radius: 3px;
-    margin: 10px;
+    border-radius: .1875rem;
+    margin: .625rem;
+    
 }
 
 .contatos button{
     background-color: #f7f6f9;
-    border: 1px solid rgb(236, 236, 236);
+    border: .0625rem solid rgb(236, 236, 236);
     border-radius: 3px;
     padding-left: 20px;
     padding-right: 20px;
@@ -18,4 +20,24 @@
 
 .dados{
     background-color: #f7f6f9;
+    min-width: 18rem;
+}
+
+.dados>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+svg{
+    height: 1.13rem;
+    width: 1.13rem;
+    margin-right: 0.5rem;
+}
+
+.info{
+    font-family: "Questrial", sans-serif;
+}
+
+.icons{
+    display: flex;
 }
