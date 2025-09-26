@@ -14,11 +14,11 @@ export default function Salvar() {
       return;
     }
     if (novoContato.numero.trim() < 11) {
-      alert("Preencha um número válido");
+      alert("Preencha com um número válido");
       return;
     }
     if (novoContato.numero.trim() > 20) {
-      alert("Preencha um número válido");
+      alert("Preencha com um número válido");
       return;
     }
     //fazer if caso não coloque numeros no campo numero
@@ -37,7 +37,7 @@ export default function Salvar() {
       setNovoContato({ nome: "", numero: "" });
 
     } catch (error) {
-      alert(error.message || error);
+      alert(error.message);
     }
   };
 
