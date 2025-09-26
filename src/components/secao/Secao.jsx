@@ -1,6 +1,6 @@
 import styles from "./Secao.module.css";
-import Gerador from "../gerador/Gerador";
-import Agenda from "../agenda/Agenda";
+import Agenda from "../agenda-de-contatos/Agenda";
+import Gerador from "../gerador-de-links/Gerador";
 
 export default function Secao() {
   return (

@@ -2,39 +2,32 @@ import styles from "./Salvar.module.css";
 import { supabase } from "../../supabase";
 import { useState } from "react";
 
-export default function Salvar() {
-  const [novoContato, setNovoContato] = useState({ nome: "", numero: "" });
+export default function Salvar(props) {
+  const [novoContato, setNovoContato] = useState({ nome: "", numero: "", pais:"" });
 
   const addContato = async (e) => {
     e.preventDefault(); // Evita que a página recarregue ao enviar o formulário.
 
-    // Validação simples
-    if (!novoContato.nome.trim() || !novoContato.numero.trim()) {
-      alert("Preencha nome e número");
+    if (!novoContato.nome.trim() || !novoContato.numero.trim() || !novoContato.pais.trim()) {
+      alert("Preencha todos os campos");
       return;
     }
-    if (novoContato.numero.trim() < 12) {
+    if (novoContato.numero.length != 11) {
       alert("Preencha com um número válido");
       return;
     }
-    if (novoContato.numero.trim() > 20) {
-      alert("Preencha com um número válido");
-      return;
-    }
-    //fazer if caso não coloque numeros no campo numero
-
-    //fazer renderizar quando add um novo contato
 
     try {
-      const { error } = await supabase
+      const { data , error } = await supabase
         .from("contatos")
-        .insert([{ nome: novoContato.nome, numero: novoContato.numero }])
+        .insert([{ nome: novoContato.nome, numero: novoContato.numero, pais: novoContato.pais }])
         .select()
         .single(); // .single() para pegar o objeto diretamente
 
       if (error) throw error;
 
-      setNovoContato({ nome: "", numero: "" });
+      setNovoContato({ nome: "", numero: "", pais:"" });
+      props.atualizarLista([data, ...props.contatos])
 
     } catch (error) {
       alert(error.message);
@@ -54,12 +47,25 @@ export default function Salvar() {
           />
         </div>
         <div>
+          <p>país</p>
+          <select value={novoContato.pais} 
+          onChange={e => setNovoContato({ ...novoContato, pais: e.target.value })}>
+              <option value="">Selecione o país</option>
+              <option value="55">Brasil</option>
+              <option value="">(Mais opções futuramente)</option>
+
+          </select>
+          
+        </div>
+        <div>
           <p>Número</p>
           <input
             type="text"
             placeholder="Número"
             value={novoContato.numero}
-            onChange={(e) => setNovoContato({ ...novoContato, numero: e.target.value })}
+            onChange={(e) => {
+              const filtroNumero = e.target.value.replace(/\D/g, "")
+              setNovoContato({...novoContato, numero: filtroNumero})}}
           />
         </div>
       </section>

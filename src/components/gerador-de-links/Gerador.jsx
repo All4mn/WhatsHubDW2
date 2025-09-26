@@ -1,13 +1,13 @@
 import styles from "./Gerador.module.css";
-import Criar from "../criar/Criar";
-import Compartilhar from "../compartilhar/Compartilhar";
+import Criar from "../criar-link/Criar";
+import AbrirConversa from "../abrir-zapzap/abrir-conversa";
 
 export default function Gerador() {
   return (
     <div>
       <section className={styles.gerador}>
         <Criar/>
-        <Compartilhar/>
+        <AbrirConversa/>
       </section>
     </div>
   );

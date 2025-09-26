@@ -1,6 +1,6 @@
-import styles from "./Compartilhar.module.css";
+import styles from "./Abrir-conversa.module.css";
 
-export default function Compartilhar() {
+export default function AbrirConversa() {
   return (
     <div>
       <section className={styles.link_container}>

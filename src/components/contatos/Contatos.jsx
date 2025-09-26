@@ -2,8 +2,7 @@ import styles from "./Contatos.module.css";
 import { supabase } from "../../supabase";
 import { useEffect, useState } from "react";
 
-export default function Contatos() {
-  const [contatos, setContatos] = useState([]);
+export default function Contatos(props) {
   const [carregando, setCarregando] = useState(true);
 
   //buscar dados no supabase para o primeiro carregamento
@@ -21,7 +20,7 @@ export default function Contatos() {
 
       if (error) throw error;
 
-      setContatos(contatos);
+      props.atualizarLista(contatos);
     } catch (error) {
       alert(error.message)
     } finally {
@@ -48,7 +47,7 @@ export default function Contatos() {
 
       if (error) throw error;
 
-      setContatos((prevContatos) =>
+      props.atualizarLista((prevContatos) =>
         prevContatos.filter((contato) => contato.id !== id)
       );
     } catch (error) {
@@ -65,10 +64,10 @@ export default function Contatos() {
           <p>Carregando contatos...</p>
         ) : (
           <div className={styles.dados}>
-            {contatos.map((contato) => (
+            {props.contatos.map((contato) => (
               <div>
                 <div className={styles.info}>
-                  <pre key={contato.id}>{contato.nome}   {contato.numero}</pre>
+                  <pre key={contato.id}>{contato.nome}   {`+${contato.pais} (${contato.numero.slice(0,2)}) ${contato.numero.slice(2,7)}-${contato.numero.slice(7,11)}`}</pre>
                 </div>
 
                 <div className={styles.icons}>
