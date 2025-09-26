@@ -57,7 +57,7 @@ export default function Contatos(props) {
   
   return (
     <div>
-      <h4>Seus contatos(1)</h4>
+      <h4>Seus contatos ({props.contatos.length})</h4>
 
       <section className={styles.contatos}>
         {carregando ? (
