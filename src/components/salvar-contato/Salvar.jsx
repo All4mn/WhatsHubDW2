@@ -12,11 +12,11 @@ export default function Salvar(props) {
       alert("Preencha todos os campos");
       return;
     }
-    if (novoContato.numero.length != 11) {
+    if (novoContato.numero.length < 9) {
       alert("Preencha com um número válido");
       return;
     }
-
+    
     try {
       const { data , error } = await supabase
         .from("contatos")
@@ -33,6 +33,22 @@ export default function Salvar(props) {
       alert(error.message);
     }
   };
+    //TRANSFORMAR EM PROPS
+  const formatacao = (numero) => {
+    const num = numero.replace(/\D/g, "");
+    if (num.length == 9){
+      return num.replace(/(\d{1})(\d{2})(\d{2})(\d{2})(\d{2})/, '($1) $2 $3 $4 $5')
+    }
+    if (num.length == 10){
+      return num.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3')
+    }
+    if (num.length == 11){
+      return num.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3')
+    }
+
+    return num
+  }
+  
 
   return (
     <form onSubmit={addContato}>
@@ -52,7 +68,8 @@ export default function Salvar(props) {
           onChange={e => setNovoContato({ ...novoContato, pais: e.target.value })}>
               <option value="">Selecione o país</option>
               <option value="55">Brasil</option>
-              <option value="">(Mais opções futuramente)</option>
+              <option value="1">Estados Unidos</option>
+              <option value="33">França</option>
 
           </select>
           
@@ -62,9 +79,10 @@ export default function Salvar(props) {
           <input
             type="text"
             placeholder="Número"
-            value={novoContato.numero}
+            value={formatacao(novoContato.numero)}
             onChange={(e) => {
-              const filtroNumero = e.target.value.replace(/\D/g, "")
+              const filtroNumero = e.target.value.replace(/\D/g, "");
+              
               setNovoContato({...novoContato, numero: filtroNumero})}}
           />
         </div>

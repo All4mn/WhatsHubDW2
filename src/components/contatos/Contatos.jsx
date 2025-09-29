@@ -54,6 +54,19 @@ export default function Contatos(props) {
       alert(error.message);
     }
   }
+  //TRANSFORMAR EM PROPS
+  const formataNumero = (numero) => {
+    const num = numero.replace(/\D/g, "");
+    if (num.length == 9){
+      return num.replace(/(\d{1})(\d{2})(\d{2})(\d{2})(\d{2})/, '($1) $2 $3 $4 $5')
+    }
+    if (num.length == 10){
+      return num.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3')
+    }
+    if (num.length == 11){
+      return num.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3')
+    }
+  }
   
   return (
     <div>
@@ -67,7 +80,7 @@ export default function Contatos(props) {
             {props.contatos.map((contato) => (
               <div>
                 <div className={styles.info}>
-                  <pre key={contato.id}>{contato.nome}   {`+${contato.pais} (${contato.numero.slice(0,2)}) ${contato.numero.slice(2,7)}-${contato.numero.slice(7,11)}`}</pre>
+                  <pre key={contato.id}>{contato.nome}   {`${formataNumero(contato.numero)}`}</pre>
                 </div>
 
                 <div className={styles.icons}>
