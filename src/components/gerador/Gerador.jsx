@@ -7,7 +7,7 @@ export default function Gerador() {
     <div>
       <section className={styles.gerador}>
         <Criar/>
-        <Compartilhar/>
+        {/* <Compartilhar/> */}
       </section>
     </div>
   );
