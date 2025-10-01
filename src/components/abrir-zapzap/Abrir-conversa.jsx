@@ -1,4 +1,4 @@
-import styles from "./Compartilhar.module.css";
+import styles from "./Abrir-conversa.module.css";
 
 export default function Compartilhar({link}) {
   const handleCopy = ()=>{
