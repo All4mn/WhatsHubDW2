@@ -1,7 +1,8 @@
 import { useState } from "react";
 import styles from "./Criar.module.css";
-// import Compartilhar from "../compartilhar/Compartilhar";
-import AbrirConversa from '../abrir-zapzap/AbrirConversa'
+import Compartilhar from "../compartilhar/Compartilhar";
+
+
 
 export default function Criar() {
   const [numero, setNumero] = useState("");
@@ -80,8 +81,7 @@ export default function Criar() {
           Preparar mensagem{" "}
         </button>
       </div>
-      <AbrirConversa
-      link={link}/>
+      <Compartilhar link={link} />
     </>
   );
 }

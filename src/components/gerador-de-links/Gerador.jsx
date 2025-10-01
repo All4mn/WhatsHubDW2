@@ -1,6 +1,6 @@
 import styles from "./Gerador.module.css";
 import Criar from "../criar-link/Criar";
-import AbrirConversa from "../abrir-zapzap/Abrir-conversa";
+import AbrirConversa from "../abrir-zapzap/AbrirConversa";
 
 export default function Gerador() {
   return (
