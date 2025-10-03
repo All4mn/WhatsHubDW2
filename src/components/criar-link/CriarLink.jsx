@@ -11,13 +11,12 @@ export default function CriarLink(props) {
 
   const colocaNumero = () =>{
     if (props.clicouMensagem){
-    
       setNumero(props.numeroContato)
       props.setClicouMensagem(false)
     }
   }
   
-  useEffect(() =>{colocaNumero()},[props.clicouMensagem])
+  useEffect(colocaNumero,[props.clicouMensagem])
 
 
   const linkGenerator = () => {
