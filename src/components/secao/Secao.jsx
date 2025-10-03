@@ -5,9 +5,11 @@ import { useState } from "react";
 
 export default function Secao() {
   const [contatos, setContatos] = useState([]);
+  const [numeroContato, setNumeroContato] = useState("");
+  const [clicouMensagem,setClicouMensagem] = useState(false)
 
   const formatacao = (numero) => {
-    const num = numero.replace(/\D/g, "");
+    const num = numero
     if (num.length == 9) {
       return num.replace(/(\d{1})(\d{2})(\d{2})(\d{2})(\d{2})/,"($1) $2 $3 $4 $5");
     }
@@ -24,12 +26,17 @@ export default function Secao() {
   return (
     <>
       <div className={styles.container}>
-        <Gerador atualizarLista={setContatos}
-        contatos={contatos}
-        formatacao={formatacao}/>
+        <Gerador contatos={contatos}
+        formatacao={formatacao}
+        numeroContato={numeroContato}
+        setClicouMensagem={setClicouMensagem}
+        clicouMensagem={clicouMensagem}/>
+
         <Agenda atualizarLista={setContatos}
         contatos={contatos}
-        formatacao={formatacao}/>
+        formatacao={formatacao}
+        setNumeroContato={setNumeroContato}
+        setClicouMensagem={setClicouMensagem}/>
       </div>
     </>
   );

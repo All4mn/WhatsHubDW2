@@ -1,21 +1,24 @@
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import styles from "./Criar.module.css";
 import AbrirConversa from '../abrir-zapzap/AbrirConversa'
 
-export default function Criar(props) {
+export default function CriarLink(props) {
   const [numero, setNumero] = useState("");
 
   const [mensagem, setMensagem] = useState("");
 
   const [link, setLink] = useState("");
 
-  const handleChange = (e) => {
-    setNumero(
-      e.target.value
-        .replace(/\D/g, "")
-    );
-    console.log(numero);
-  };
+  const colocaNumero = () =>{
+    if (props.clicouMensagem){
+    
+      setNumero(props.numeroContato)
+      props.setClicouMensagem(false)
+    }
+  }
+  
+  useEffect(() =>{colocaNumero()},[props.clicouMensagem])
+
 
   const linkGenerator = () => {
     if (numero == "") {
@@ -35,8 +38,6 @@ export default function Criar(props) {
       return;
     }
     setLink(`https://wa.me/55${numero}?text=${mensagem}`);
-      
-    
   };
 
   return (
@@ -60,7 +61,11 @@ export default function Criar(props) {
             type="text"
             placeholder="Número"
             value={props.formatacao(numero)}
-            onChange={handleChange}
+            onChange={(e) => {
+              setNumero(
+                e.target.value
+                  .replace(/\D/g, "")
+              );}}
           />
         </div>
         <div>

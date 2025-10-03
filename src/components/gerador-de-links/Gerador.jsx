@@ -1,13 +1,16 @@
 import styles from "./Gerador.module.css";
-import Criar from "../criar-link/CriarLink";
+import CriarLink from "../criar-link/CriarLink";
 
 export default function Gerador(props) {
   return (
     <div>
       <section className={styles.gerador}>
-        <Criar atualizarLista={props.atualizarLista}
-        contatos={props.contatos}
-        formatacao={props.formatacao}/>
+
+        <CriarLink contatos={props.contatos}
+        formatacao={props.formatacao}
+        numeroContato={props.numeroContato}
+        setClicouMensagem={props.setClicouMensagem}
+        clicouMensagem={props.clicouMensagem}/>
       </section>
     </div>
   );
