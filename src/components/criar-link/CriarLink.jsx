@@ -2,25 +2,17 @@ import { useState } from "react";
 import styles from "./Criar.module.css";
 import AbrirConversa from '../abrir-zapzap/AbrirConversa'
 
-export default function Criar() {
+export default function Criar(props) {
   const [numero, setNumero] = useState("");
 
   const [mensagem, setMensagem] = useState("");
 
   const [link, setLink] = useState("");
 
-  const especialCaracters = ["(", ")", "-"];
-
-  let url = `https://wa.me/55${numero
-    .split("")
-    .filter((char) => !especialCaracters.includes(char))
-    .join("")}?text=${mensagem}`;
-
   const handleChange = (e) => {
     setNumero(
       e.target.value
         .replace(/\D/g, "")
-        .replace(/(\d{2})(\d{5})(\d{4})/, "($1)$2-$3")
     );
     console.log(numero);
   };
@@ -30,12 +22,21 @@ export default function Criar() {
       alert("forneça um número");
       return;
     }
-    else if(numero.length < 14 || numero.length > 15){
+    if(numero.length < 9 || numero.length >= 12){
       alert('numero invalido')
-    } else {
-      setLink(url);
-      
+      return
     }
+    if (numero.length == 9) {
+      setLink(`https://wa.me/33${numero}?text=${mensagem}`);
+      return;
+    }
+    if (numero.length == 10) {
+      setLink(`https://wa.me/1${numero}?text=${mensagem}`);
+      return;
+    }
+    setLink(`https://wa.me/55${numero}?text=${mensagem}`);
+      
+    
   };
 
   return (
@@ -58,7 +59,7 @@ export default function Criar() {
           <input
             type="text"
             placeholder="Número"
-            value={numero}
+            value={props.formatacao(numero)}
             onChange={handleChange}
           />
         </div>

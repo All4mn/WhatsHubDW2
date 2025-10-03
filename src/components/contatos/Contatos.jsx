@@ -67,7 +67,7 @@ export default function Contatos(props) {
             {props.contatos.map((contato) => (
               <div key={contato.id}>
                 <div className={styles.info}>
-                  <pre>{contato.nome}   {`${props.formatacao(contato.numero)}`}</pre>
+                  <pre>{contato.nome}   {contato.pais} {`${props.formatacao(contato.numero)}`}</pre>
                 </div>
 
                 <div className={styles.icons}>

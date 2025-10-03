@@ -12,7 +12,7 @@ export default function Salvar(props) {
       alert("Preencha todos os campos");
       return;
     }
-    if (novoContato.numero.length < 9) {
+    if (novoContato.numero.length < 9 || novoContato.numero.length >= 12) {
       alert("Preencha com um número válido");
       return;
     }
