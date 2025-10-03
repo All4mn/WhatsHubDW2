@@ -51,7 +51,7 @@ export default function Salvar(props) {
           <select value={novoContato.pais} 
           onChange={e => setNovoContato({ ...novoContato, pais: e.target.value })}>
               <option value="">Selecione o país</option>
-              <option value="55">Brasil</option>
+              <option value="55"><img src="../../assets/brasil.svg" alt=""/></option>
               <option value="1">Estados Unidos</option>
               <option value="33">França</option>
 
