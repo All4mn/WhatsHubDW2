@@ -33,22 +33,6 @@ export default function Salvar(props) {
       alert(error.message);
     }
   };
-    //TRANSFORMAR EM PROPS
-  const formatacao = (numero) => {
-    const num = numero.replace(/\D/g, "");
-    if (num.length == 9){
-      return num.replace(/(\d{1})(\d{2})(\d{2})(\d{2})(\d{2})/, '($1) $2 $3 $4 $5')
-    }
-    if (num.length == 10){
-      return num.replace(/(\d{3})(\d{3})(\d{4})/, '($1) $2-$3')
-    }
-    if (num.length == 11){
-      return num.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3')
-    }
-
-    return num
-  }
-  
 
   return (
     <form onSubmit={addContato}>
@@ -79,7 +63,7 @@ export default function Salvar(props) {
           <input
             type="text"
             placeholder="Número"
-            value={formatacao(novoContato.numero)}
+            value={props.formatacao(novoContato.numero)}
             onChange={(e) => {
               const filtroNumero = e.target.value.replace(/\D/g, "");
               

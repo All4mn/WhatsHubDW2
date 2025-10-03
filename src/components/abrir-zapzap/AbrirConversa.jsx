@@ -16,7 +16,7 @@ export default function Compartilhar({link}) {
       <section className={styles.link_container}>
         <p>Link gerado:</p>
         <div className={styles.final_link}>
-          <input type="text" placeholder="" value={link}/>
+          <input type="text" placeholder="" defaultValue={link}/>
           {/* styles.copiar está vazio */}
           <button className={styles.copiar} onClick={handleCopy}>icon</button>
         </div>
