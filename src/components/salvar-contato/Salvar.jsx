@@ -37,7 +37,7 @@ export default function Salvar(props) {
   return (
     <form onSubmit={addContato}>
       <section className={styles.agenda_container}>
-        <div>
+        <div className={styles.nome}>
           <p>Nome</p>
           <input
             type="text"
@@ -46,19 +46,20 @@ export default function Salvar(props) {
             onChange={(e) => setNovoContato({ ...novoContato, nome: e.target.value })}
           />
         </div>
-        <div>
-          <p>país</p>
-          <select value={novoContato.pais} 
+        <div className={styles.pais}>
+          <p>País</p>
+
+          <select  value={novoContato.pais} 
           onChange={e => setNovoContato({ ...novoContato, pais: e.target.value })}>
-              <option value="">Selecione o país</option>
-              <option value="55"><img src="../../assets/brasil.svg" alt=""/></option>
-              <option value="1">Estados Unidos</option>
-              <option value="33">França</option>
+              <option value="">-</option>
+              <option value="55">🇧🇷</option>
+              <option value="1">🇺🇸</option>
+              <option value="33">🇫🇷</option>
 
           </select>
           
         </div>
-        <div>
+        <div className={styles.numero}>
           <p>Número</p>
           <input
             type="text"
@@ -71,7 +72,7 @@ export default function Salvar(props) {
           />
         </div>
       </section>
-      <button className={styles.salvar_na_agenda} type="submit">Salvar na Agenda</button>
+      <div className={styles.botao}><button className={styles.salvar_na_agenda} type="submit">Salvar na Agenda</button></div>
     </form>
   );
 }

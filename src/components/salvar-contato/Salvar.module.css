@@ -7,8 +7,54 @@
 
 .salvar_na_agenda{
     padding: 0.5rem;
-    border: 1px solid rgb(236, 236, 236);
+    border: 1px solid white;
     border-radius: 3px;
     margin-top: 10px;
+    width: 25rem;
+    font-family: 'questrial', sans-serif;
     
+}
+
+.numero{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+/* .pais{
+    padding:5px 0px 5px 5px;
+    border-radius: 3px;
+    border-style:solid;
+    background-color: #f7f6f9;
+    border: 1px solid rgb(236, 236, 236);
+    height: 2.1rem;
+} */
+
+select{
+    padding:5px 5px 5px 5px;
+    border-radius: 3px;
+    border-style:solid;
+    background-color: #f7f6f9;
+    border: 1px solid rgb(236, 236, 236);
+    height: 2.1rem;
+    width: 100%;
+    font-family: 'questrial', sans-serif;
+    margin-top: 1rem;
+}
+
+.nome{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
