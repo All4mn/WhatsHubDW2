@@ -1,0 +1,19 @@
+# Arquivo: render.yaml
+
+services:
+  - type: web
+    name: whatshubdw2 # Use o nome do seu serviço no Render
+    staticFiles:
+      # Regras de Redirects
+      headers:
+        - key: Cache-Control
+          value: max-age=600, must-revalidate
+      # Fallback: Se o arquivo não for encontrado, redireciona para o index.html
+      # ESSA É A PARTE CRUCIAL PARA SPAs COMO REACT
+      paths:
+        - path: /*
+          headers:
+            - key: Access-Control-Allow-Origin
+              value: '*'
+          destination: /index.html
+          status: 200
