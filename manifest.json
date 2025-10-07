@@ -1,0 +1,10 @@
+{
+  "name": "WhatsHub",
+  "description": "Gerenciador de mensagens do WhatsApp Web",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "/src/main.jsx",
+    "default_icon": "./src/assets/WhatsHub-Icon.png"
+  }
+}
