@@ -32,7 +32,7 @@ export default function Secao() {
         setClicouMensagem={setClicouMensagem}
         clicouMensagem={clicouMensagem}/>
 
-        <Agenda atualizarLista={setContatos}
+        <Agenda setContatos={setContatos}
         contatos={contatos}
         formatacao={formatacao}
         setNumeroContato={setNumeroContato}

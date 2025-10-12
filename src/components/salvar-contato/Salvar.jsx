@@ -1,9 +1,46 @@
 import styles from "./Salvar.module.css";
 import { supabase } from "../../supabase";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Salvar(props) {
   const [novoContato, setNovoContato] = useState({ nome: "", numero: "", pais:"" });
+  const [textBotao, setTextBotao] = useState("Salvar na Agenda")
+
+  const mudarBotao = ()=>{
+    if (props.triggerEdit){
+      setTextBotao("Salvar Edição")
+      return
+    }
+    setTextBotao("Salvar na Agenda")
+  }
+
+  const setContato= async ()=>{
+    if (props.triggerEdit){
+      try {
+      const { data , error } = await supabase
+        .from("contatos")
+        .select("*")
+        .single()
+        .eq("id",props.editId)
+
+        if (error) throw error;
+
+        setNovoContato({ nome: data.nome, numero: data.numero, pais: data.pais })
+
+      } catch (error) {
+        alert(error.message);
+      }
+      return
+    }
+    setNovoContato({ nome: "", numero: "", pais:""})
+  }
+
+  const editMode = ()=>{
+    setContato()
+    mudarBotao()
+  }
+
+  useEffect(editMode,[props.triggerEdit])
 
   const addContato = async (e) => {
     e.preventDefault(); // Evita que a página recarregue ao enviar o formulário.
@@ -17,6 +54,33 @@ export default function Salvar(props) {
       return;
     }
     
+    //edição dos contatos
+    if (props.triggerEdit){
+      try {
+        const { data, error } = await supabase
+        .from("contatos")
+        .update([{ nome: novoContato.nome, numero: novoContato.numero, pais: novoContato.pais }])
+        .eq("id",props.editId)
+        .select()
+        .single()
+        
+        if (error) throw error;
+        
+        setNovoContato({ nome: "", numero: "", pais:"" });
+        
+        props.setContatos((prevContatos) => {
+          const filtrado = prevContatos.filter((contato) => contato.id !== props.editId);
+          return [data, ...filtrado];
+        });
+        
+      } catch (error) {
+        alert(error.message);
+      } finally{ 
+        props.setTriggerEdit(false)
+      }
+      return
+    }
+
     try {
       const { data , error } = await supabase
         .from("contatos")
@@ -27,7 +91,7 @@ export default function Salvar(props) {
       if (error) throw error;
 
       setNovoContato({ nome: "", numero: "", pais:"" });
-      props.atualizarLista([data, ...props.contatos])
+      props.setContatos([data, ...props.contatos])
 
     } catch (error) {
       alert(error.message);
@@ -72,7 +136,9 @@ export default function Salvar(props) {
           />
         </div>
       </section>
-      <div className={styles.botao}><button className={styles.salvar_na_agenda} type="submit">Salvar na Agenda</button></div>
+      <div className={styles.botao}>
+        <button className={styles.salvar_na_agenda} type="submit">{textBotao}</button>
+        </div>
     </form>
   );
 }

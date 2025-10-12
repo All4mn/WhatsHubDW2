@@ -1,8 +1,11 @@
 import styles from "./Agenda.module.css";
 import Salvar from "../salvar-contato/Salvar";
 import Contatos from "../contatos/Contatos";
+import { useState } from "react";
 
 export default function Agenda(props) {
+  const [triggerEdit, setTriggerEdit] = useState(false)
+  const [editId, setEditId] = useState("")
 
   return (
     <div>
@@ -11,15 +14,20 @@ export default function Agenda(props) {
         {/* styles.titulo está vazio */}
         <h2 className={styles.titulo}>Agenda de contatos</h2>
 
-        <Salvar atualizarLista={props.atualizarLista}
+        <Salvar setContatos={props.setContatos}
         contatos={props.contatos}
-        formatacao={props.formatacao}/>
+        formatacao={props.formatacao}
+        triggerEdit={triggerEdit}
+        setTriggerEdit={setTriggerEdit}
+        editId={editId}/>
         
-        <Contatos atualizarLista={props.atualizarLista}
+        <Contatos setContatos={props.setContatos}
         contatos={props.contatos}
         formatacao={props.formatacao}
         setNumeroContato={props.setNumeroContato}
-        setClicouMensagem={props.setClicouMensagem}/>      
+        setClicouMensagem={props.setClicouMensagem}
+        setTriggerEdit={setTriggerEdit}
+        setEditId={setEditId}/>
       </div>
     </div>
   );

@@ -20,19 +20,13 @@ export default function Contatos(props) {
 
       if (error) throw error;
 
-      props.atualizarLista(contatos);
+      props.setContatos(contatos);
     } catch (error) {
       alert(error.message)
     } finally {
       setCarregando(false);
     }
   };
-
-  // const editContato = async (id) => {
-  //   try{
-         
-  //   }
-  // }
 
   const deleteContato = async (id) => {
     if (!confirm("Tem certeza que deseja deletar este contato?")) {
@@ -47,7 +41,7 @@ export default function Contatos(props) {
 
       if (error) throw error;
 
-      props.atualizarLista((prevContatos) =>
+      props.setContatos((prevContatos) =>
         prevContatos.filter((contato) => contato.id !== id)
       );
     } catch (error) {
@@ -80,7 +74,10 @@ export default function Contatos(props) {
                   <path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9 9 0 0 0 8 15"/>
                   </svg>
           
-                  <svg xmlns="http://www.w3.org/2000/svg" > {/* colar na tag svg o onclick */}
+                  <svg xmlns="http://www.w3.org/2000/svg" onClick={()=>{
+                    props.setTriggerEdit(true)
+                    props.setEditId(contato.id)
+                  }}>
                   <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
                   <path fillRule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
                   </svg>
