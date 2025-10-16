@@ -59,8 +59,8 @@ div input{
     border-left: .2rem solid #40C057;
     border-top-left-radius: 0.01rem;
     border-bottom-left-radius: 0.01rem;
-    width: 20rem;
-    max-width: 18rem;
+    width: 34rem;
+    /* max-width: 18rem; */
     background-color: white;
 }
 
