@@ -2,8 +2,8 @@
 
 .icon{
     fill: #40C057;
-    width: 3rem; /* tamanho do svg */
-    height: 3rem; /* tamanho do svg */
+    width: 2.5rem; /* tamanho do svg */
+    height: 2.5rem; /* tamanho do svg */
     display: inline-block;
     vertical-align: middle;
     text-align: center;
@@ -41,6 +41,7 @@
     border-top: .2rem solid #40C057;
     border-left: .2rem solid #40C057;
     border-right: .2rem solid #40C057;
-    width: 41rem;
+    width: 100%;
+    max-width: 41rem;
 }
 

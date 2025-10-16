@@ -1,0 +1,34 @@
+/* Immediate override: force a reasonable minimum popup width so toolbar popup isn't a tiny strip */
+html, body, #root { min-width: 360px !important; }
+
+/* Responsive override for narrow extension popups */
+@media (max-width: 720px) {
+  /* Force main layout to stack vertically */
+  ._container_1b0ig_3, ._secaoum_1b0ig_23, ._container_ocam6_189, ._cabecalho_4i97w_63 {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.5rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Make sidebar/card blocks fill width and shrink height */
+  ._agenda_s0h2v_3, ._gerador_br5c7_105, ._contatos_ocam6_3, ._lista_ocam6_211, ._agenda_container_s0h2v_3 {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0.75rem !important;
+    margin: 0.5rem 0 !important;
+    height: auto !important;
+  }
+
+  /* Reduce text and element sizes proportionally */
+  ._titulo_4i97w_29 { font-size: 1.25rem !important; margin-top: 0.75rem !important; }
+  ._subtitulo_4i97w_45 { font-size: 0.9rem !important; }
+
+  /* Prevent page-level scrollbars and allow inner scrolling */
+  /* do not hide html/body overflow here — let the browser size the popup to content */
+  #root, #root > * { width: 100% !important; height: 100% !important; overflow: auto !important; }
+
+  /* Ensure selects and inputs fit */
+  select, input, textarea { width: 100% !important; box-sizing: border-box !important; }
+}
