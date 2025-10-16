@@ -1,12 +1,15 @@
-# React + Vite
+👥Grupo: Allan Guilherme, Mateus Augusuto e Anna Luísa Delconte
+🚀Projeto: WhatsHub
+📖Materia: Desenvolvimento Web 2
+👨‍🏫Professor: Rafael Liberato
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O que é o WhatsHub?
+WhatsHub é um site e extensão para navegador que tem como objetivo organizar sua agenda de contatos e gerar links rápidos para qualquer conversas a qualquer momento. Com sua responsividade, o WhatsHub suporta tambem acesso remoto pelo celular, sendo uma opção para quem vive com a agenda bagunçada.
 
-Currently, two official plugins are available:
+Acesse em: https://whats-hub-dw-2.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ou baixe como extensão seguindo o seguinte passo a passo:
 
-## Expanding the ESLint configuration
+1- Acesse o repositório hospedado: https://github.com/All4mn/WhatsHubDW2
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2-
