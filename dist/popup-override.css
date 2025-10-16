@@ -1,3 +1,6 @@
+/* Immediate override: force a reasonable minimum popup width so toolbar popup isn't a tiny strip */
+html, body, #root { min-width: 360px !important; }
+
 /* Responsive override for narrow extension popups */
 @media (max-width: 720px) {
   /* Force main layout to stack vertically */
@@ -23,7 +26,7 @@
   ._subtitulo_4i97w_45 { font-size: 0.9rem !important; }
 
   /* Prevent page-level scrollbars and allow inner scrolling */
-  html, body { overflow: hidden !important; }
+  /* do not hide html/body overflow here — let the browser size the popup to content */
   #root, #root > * { width: 100% !important; height: 100% !important; overflow: auto !important; }
 
   /* Ensure selects and inputs fit */
