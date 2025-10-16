@@ -89,3 +89,10 @@ section{
 section div{
     background-color: white;
 }
+
+.padrao{
+    background-color: white;
+    color: gray;
+    border-radius: .3125rem;
+    margin-bottom: .4rem;
+}
