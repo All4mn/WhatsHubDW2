@@ -61,6 +61,7 @@ div input{
     border-bottom-left-radius: 0.01rem;
     width: 100%;
     max-width: 18rem;
+    background-color: white;
 }
 
 .gerador input{
