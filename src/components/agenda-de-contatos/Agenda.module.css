@@ -4,7 +4,6 @@
     flex-direction: column;
     gap: 0.625rem;
     padding: 1.875rem;
-    border: 1px solid rgb(236, 236, 236);
     border-radius: .5rem;
     width: 500px;
     background-color: white;
@@ -12,10 +11,9 @@
         input{
             padding:5px 0px 5px 5px;
             border-radius: 3px;
-            border-style:solid;
+            /* border-style:solid; */
             width: 100%;
             background-color: #f7f6f9;
-            border: 1px solid rgb(236, 236, 236);
         }
 
         textarea{
