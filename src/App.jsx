@@ -5,7 +5,7 @@ import Body from './components/body/Body.jsx';
 function App() {
   return (
     <>
-      <div className='container'>
+      <div className='container-app'>
         <Cabecalho/>
         <Body/>
       </div>
