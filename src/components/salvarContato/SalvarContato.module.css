@@ -11,9 +11,9 @@
     border: 1px solid white;
     border-radius: 3px;
     margin-top: 10px;
-    width: 25rem;
+    width: 100%;
+    max-width: 25rem;
     font-family: 'questrial', sans-serif;
-    
 }
 
 .numero{
@@ -65,14 +65,15 @@ select{
 .agenda{
     display: flex;
     flex-direction: column;
-    gap: 0.625rem;
-    padding: 1.875rem;
+    gap: 0.5rem; /* reduced */
+    padding: 1rem; /* reduced */
     border-radius: .5rem;
     border-right: .2rem solid #40C057;
     border-top-right-radius: 0.01rem;
     border-bottom-right-radius: 0.01rem;
-    width: 250px;
-    height: 23rem;
+    width: 100%;
+    max-width: 18rem; /* more compact */
+    height: 20rem;
     background-color: white;
     font-family: "Questrial", sans-serif;
 }
