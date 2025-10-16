@@ -88,13 +88,14 @@ export default function PrepararMensagem(props) {
             placeholder="Digite sua mensagem aqui..."
           ></textarea>
           <select
+            className={styles.padrao}
             value={selectedPreset}
             onChange={(e) => {
               setSelectedPreset(e.target.value);
               setMensagem(e.target.value);
             }}
           >
-            <option className={styles.padrao} value="">escolher mensagem padrão</option>
+            <option value="">escolher mensagem padrão</option>
             {presets.map((p, i) => (
               <option key={i} value={p}>
                 {p}
