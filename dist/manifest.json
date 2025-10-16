@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsHub",
+  "version": "1.0.0",
+  "description": "Extensão React + Vite",
+  "action": {
+  "default_popup": "popup.html",
+  "default_icon": "WppHub-icon.png"
+  },
+  "icons": {
+    "48": "WppHub-icon.png",
+    "128": "WppHub-icon.png"
+  },
+  "permissions": ["storage", "tabs"]
+}

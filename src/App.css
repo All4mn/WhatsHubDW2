@@ -8,7 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url(../dist/image.png);
+  background-image: url(../image.png);
   background-repeat: repeat; /* Evita a repetição da imagem */
   background-size: 40%;
 }
