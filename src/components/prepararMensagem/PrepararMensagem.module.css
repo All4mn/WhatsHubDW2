@@ -48,3 +48,42 @@ div input{
     color: white;
     border: .0625rem;
 }
+
+/* Styles merged from Gerador.module.css */
+.gerador{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding: 1.875rem;
+    border-radius: .5rem;
+    border-left: .2rem solid #40C057;
+    border-top-left-radius: 0.01rem;
+    border-bottom-left-radius: 0.01rem;
+    width: 250px;
+}
+
+.gerador input{
+    padding:5px 0px 5px 5px;
+    border-radius: 3px;
+    border-style:solid;
+    width: 100%;
+    background-color: #f7f6f9;
+    border: 1px solid rgb(236, 236, 236);
+}
+
+.gerador textarea{
+    padding: 5px 0px 5px 5px;
+    border-radius: 3px;
+    border-style: solid;
+    width: 100%;
+    background-color: #f7f6f9;
+    border: 1px solid rgb(236, 236, 236);
+}
+
+section{
+    background-color: white;
+}
+
+section div{
+    background-color: white;
+}

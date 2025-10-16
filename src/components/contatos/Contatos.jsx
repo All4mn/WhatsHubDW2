@@ -1,9 +1,10 @@
 import styles from "./Contatos.module.css";
 import { supabase } from "../../supabase";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 export default function Contatos(props) {
   const [carregando, setCarregando] = useState(true);
+  const [buscaNome, setBuscaNome] = useState("");
 
   //buscar dados no supabase para o primeiro carregamento
   useEffect(() => {
@@ -48,17 +49,39 @@ export default function Contatos(props) {
       alert(error.message);
     }
   }
+
+  const handlePesquisa = (e) => setBuscaNome(e.target.value);
+
+  // lista filtrada por busca (case-insensitive)
+  const resultados = useMemo(() => {
+    const q = (buscaNome || "").trim().toLowerCase();
+    if (!q) return props.contatos || [];
+    return (props.contatos || []).filter((c) =>
+      (c.nome || "").toLowerCase().includes(q)
+    );
+  }, [props.contatos, buscaNome]);
+
   
   return (
-    <div>
+    <div className={styles.lista}>
+      <h2 className={styles.titulo}>Agenda de contatos</h2>
+      {/* fazer css */}
+
       <h4>Seus contatos ({props.contatos.length})</h4>
+
+      <div>
+        <input type="text" 
+        placeholder="pesquisar um nome"
+        value={buscaNome}
+        onChange={handlePesquisa} />
+      </div>
 
       <section className={styles.contatos}>
         {carregando ? (
           <p>Carregando contatos...</p>
         ) : (
           <div className={styles.dados}>
-            {props.contatos.map((contato) => (
+            {resultados.map((contato) => (
               <div className={styles.container} key={contato.id}>
                 <div className={styles.info}>
                   <span>{contato.nome}</span>

@@ -101,3 +101,44 @@ span{
     margin-bottom: 0.5rem;
     border-radius: .5rem;
 }
+
+/* Styles from ListaContatos.module.css */
+.lista{
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.625rem; */
+    padding: 1.875rem;
+    border-radius: .5rem;
+    border-right: .2rem solid #40C057;
+    border-bottom: .2rem solid #40C057;
+    border-left: .2rem solid #40C057;
+    border-top-left-radius: 0.01rem;
+    border-top-right-radius: 0.01rem;
+    width: 38rem;
+    height: 12rem;
+    margin-bottom: 3rem;
+    background-color: white;
+    font-family: "Questrial", sans-serif;
+}
+
+.lista input{
+    padding:5px 0px 5px 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(236, 236, 236);
+    width: 100%;
+    background-color: #f7f6f9;
+}
+
+.lista textarea{
+    padding: 5px 0px 5px 5px;
+    border: 1px solid rgb(236, 236, 236);
+    border-radius: 3px;
+    border-style: solid;
+    width: 100%;
+    background-color: #f7f6f9;
+}
+
+/* Ensure heading/background rules from Lista are present */
+h2{background-color: white}
+h4{background-color: white}
+p{background-color: white}

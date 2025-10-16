@@ -1,32 +1,39 @@
-import { useState, useEffect} from "react";
-import styles from "./Criar.module.css";
-import AbrirConversa from '../abrir-zapzap/AbrirConversa'
+import { useState, useEffect } from "react";
+import styles from "./PrepararMensagem.module.css";
+import AbrirConversa from "../abrirConversa/AbrirConversa";
 
-export default function CriarLink(props) {
+export default function PrepararMensagem(props) {
   const [numero, setNumero] = useState("");
 
   const [mensagem, setMensagem] = useState("");
 
+  const [selectedPreset, setSelectedPreset] = useState("");
+
+  const presets = [
+    "Olá! Tudo bem?",
+    "Oi, posso falar com você sobre uma oportunidade rápida?",
+    "Olá, gostaria de compartilhar um link importante com você.",
+  ];
+
   const [link, setLink] = useState("");
 
-  const colocaNumero = () =>{
-    if (props.clicouMensagem){
-      setNumero(props.numeroContato)
-      props.setClicouMensagem(false)
+  const colocaNumero = () => {
+    if (props.clicouMensagem) {
+      setNumero(props.numeroContato);
+      props.setClicouMensagem(false);
     }
-  }
-  
-  useEffect(colocaNumero,[props.clicouMensagem])
+  };
 
+  useEffect(colocaNumero, [props.clicouMensagem]);
 
   const linkGenerator = () => {
     if (numero == "") {
       alert("forneça um número");
       return;
     }
-    if(numero.length < 9 || numero.length >= 12){
-      alert('numero invalido')
-      return
+    if (numero.length < 9 || numero.length >= 12) {
+      alert("numero invalido");
+      return;
     }
     if (numero.length == 9) {
       setLink(`https://wa.me/33${numero}?text=${mensagem}`);
@@ -40,7 +47,7 @@ export default function CriarLink(props) {
   };
 
   return (
-    <>
+    <div className={styles.gerador}>
       <div>
         {/* styles.titulo está vazio */}
         <h2 className={styles.titulo}>
@@ -63,19 +70,33 @@ export default function CriarLink(props) {
             placeholder="Número"
             value={props.formatacao(numero)}
             onChange={(e) => {
-              setNumero(
-                e.target.value
-                  .replace(/\D/g, "")
-              );}}
+              setNumero(e.target.value.replace(/\D/g, ""));
+            }}
           />
         </div>
         <div>
           <p>Mensagem(opcional)</p>
+          <select
+            value={selectedPreset}
+            onChange={(e) => {
+              setSelectedPreset(e.target.value);
+              setMensagem(e.target.value);
+            }}
+          >
+            <option value="">escolher mensagem padrão</option>
+            {presets.map((p, i) => (
+              <option key={i} value={p}>
+                {p}
+              </option>
+            ))}
+          </select>
+
           <textarea
             name=""
             id=""
             value={mensagem}
             onChange={(e) => {
+              setSelectedPreset(""); // limpa o preset quando digitar
               setMensagem(e.target.value);
             }}
             className={styles.msg}
@@ -86,8 +107,7 @@ export default function CriarLink(props) {
           Preparar mensagem{" "}
         </button>
       </div>
-      <AbrirConversa
-      link={link}/>
-    </>
+      <AbrirConversa link={link} />
+    </div>
   );
 }
