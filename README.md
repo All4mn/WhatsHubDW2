@@ -14,4 +14,6 @@ Ou baixe como extensão seguindo o seguinte passo a passo:
 
 2- Baixe os arquivos e pastas presentes
 
-3- Abra os arquivos em seu Visual Studios
+3- Abra os arquivos em seu Visual Studios, localize a pasta no seu terminal e execute o comando 'npm run build' 
+
+4- Após isso, uma pasta chamada 'dist' ou 'build' aparecerá, arraste os arquivos 
