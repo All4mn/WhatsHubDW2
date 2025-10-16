@@ -8,8 +8,10 @@ function App() {
 
   return (
     <>
-      <Cabecalho/>
-      <Secao/>
+      <div className='container'>
+        <Cabecalho/>
+        <Secao/>
+      </div>
     </>
   )
 }

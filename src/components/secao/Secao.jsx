@@ -1,6 +1,7 @@
 import styles from "./Secao.module.css";
 import Agenda from "../agenda-de-contatos/Agenda";
 import Gerador from "../gerador-de-links/Gerador";
+import ListaContatos from "../lista-contatos/ListaContatos";
 import { useState } from "react";
 
 export default function Secao() {
@@ -26,17 +27,25 @@ export default function Secao() {
   return (
     <>
       <div className={styles.container}>
-        <Gerador contatos={contatos}
-        formatacao={formatacao}
-        numeroContato={numeroContato}
-        setClicouMensagem={setClicouMensagem}
-        clicouMensagem={clicouMensagem}/>
+        <div className={styles.secaoum}>
+          <Gerador contatos={contatos}
+          formatacao={formatacao}
+          numeroContato={numeroContato}
+          setClicouMensagem={setClicouMensagem}
+          clicouMensagem={clicouMensagem}/>
+          <Agenda setContatos={setContatos}
+          contatos={contatos}
+          formatacao={formatacao}
+          setNumeroContato={setNumeroContato}
+          setClicouMensagem={setClicouMensagem}/>
+        </div>
 
-        <Agenda setContatos={setContatos}
+        <ListaContatos setContatos={setContatos}
         contatos={contatos}
         formatacao={formatacao}
         setNumeroContato={setNumeroContato}
-        setClicouMensagem={setClicouMensagem}/>
+        setClicouMensagem={setClicouMensagem}
+        />
       </div>
     </>
   );

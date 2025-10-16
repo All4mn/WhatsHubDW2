@@ -7,7 +7,7 @@
     justify-content: space-between;
     border-radius: .1875rem;
     margin: .625rem;
-    
+    width: 34rem;
 }
 
 .contatos button{
@@ -45,8 +45,9 @@ svg{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #F7F6F9;
+    background-color: white;
     border-radius: 5rem;
+    padding: 0.2rem;
 }
 
 .icons{
@@ -55,7 +56,20 @@ svg{
     align-items: center;
     width: 5.5rem;
     margin-right: 2rem;
+    
+}
 
+.icon{
+    fill: #40C057;
+    width: 1.5rem; /* tamanho do svg */
+    height: 1.5rem; /* tamanho do svg */
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    margin-right: .625rem;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 0.5rem;
 }
 
 p{
@@ -85,4 +99,5 @@ span{
     flex-direction: row;
     
     margin-bottom: 0.5rem;
+    border-radius: .5rem;
 }

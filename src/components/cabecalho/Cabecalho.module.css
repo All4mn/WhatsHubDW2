@@ -2,14 +2,14 @@
 
 .icon{
     fill: #40C057;
-    width: 2rem; /* tamanho do svg */
-    height: 2rem; /* tamanho do svg */
+    width: 3rem; /* tamanho do svg */
+    height: 3rem; /* tamanho do svg */
     display: inline-block;
     vertical-align: middle;
     text-align: center;
     margin-right: .625rem;
     margin-bottom: .3rem;
-    background-color: rgb(248, 247, 247);
+    background-color: white;
 }
 
 .titulo{
@@ -26,6 +26,7 @@
     font-family: "Questrial", sans-serif;
     white-space: pre;
     margin-top: 1rem;
+    margin-bottom: 1.3rem;
 }
 
 .cabecalho{
@@ -33,6 +34,13 @@
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
-    color:#606061
+    color:#606061;
+    background-color: white;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    border-top: .2rem solid #40C057;
+    border-left: .2rem solid #40C057;
+    border-right: .2rem solid #40C057;
+    width: 41rem;
 }
 

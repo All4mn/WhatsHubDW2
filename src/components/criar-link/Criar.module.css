@@ -5,10 +5,14 @@
     background-color: white;
 }
 
-svg{
-    max-width: 1.20rem;
-    max-height: 1.20rem;
+.svg{
+    max-width: 2rem;
+    max-height: 2rem;
     fill: #1ac257;
+    background-color: white;
+}
+
+path{
     background-color: white;
 }
 

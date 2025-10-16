@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300..700&display=swap');
 .agenda_container{
-    display: flex;
     justify-content: space-between;
     background-color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .salvar_na_agenda{
@@ -43,6 +44,8 @@ select{
     width: 100%;
     font-family: 'questrial', sans-serif;
     margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .nome{

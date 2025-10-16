@@ -4,7 +4,10 @@
     gap: 0.625rem;
     padding: 1.875rem;
     border-radius: .5rem;
-    width: 500px;
+    border-left: .2rem solid #40C057;
+    border-top-left-radius: 0.01rem;
+    border-bottom-left-radius: 0.01rem;
+    width: 250px;
         input{
             padding:5px 0px 5px 5px;
             border-radius: 3px;

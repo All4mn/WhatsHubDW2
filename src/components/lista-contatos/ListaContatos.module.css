@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300..700&display=swap');
-.agenda{
+.lista{
     display: flex;
     flex-direction: column;
-    gap: 0.625rem;
+    /* gap: 0.625rem; */
     padding: 1.875rem;
     border-radius: .5rem;
     border-right: .2rem solid #40C057;
+    border-bottom: .2rem solid #40C057;
+    border-left: .2rem solid #40C057;
+    border-top-left-radius: 0.01rem;
     border-top-right-radius: 0.01rem;
-    border-bottom-right-radius: 0.01rem;
-    width: 250px;
-    height: 23rem;
+    width: 38rem;
+    height: 12rem;
+    margin-bottom: 3rem;
     background-color: white;
     font-family: "Questrial", sans-serif;
         input{
@@ -45,7 +48,3 @@ h4{
 h2{
     background-color: white;
 }
-/* 
-.titulo{
-    a fazer
-} */
