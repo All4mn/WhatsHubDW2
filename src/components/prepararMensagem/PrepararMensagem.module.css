@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300..700&display=swap');
+
+.titulo{
+    font-family: "Questrial", sans-serif;
+    background-color: white;
+}
+
+.svg{
+    max-width: 2rem;
+    max-height: 2rem;
+    fill: #1ac257;
+    background-color: white;
+}
+
+path{
+    background-color: white;
+}
+
+svg.bi-bi-chat{
+    background-color: white;
+
+}
+
+p{
+    font-family: "Questrial", sans-serif;
+    font-size: 0.9rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    background-color: white;
+}
+
+div input{
+    background-color: rgb(236, 236, 236);
+}
+
+
+.msg{
+    resize: vertical;
+    font-family: "Questrial", sans-serif;
+    background-color: white;
+}
+
+.enviar{
+    background-color: #1ac257;
+    border-radius: 3px;
+    padding: 15px;
+    width: 100%;
+    color: white;
+    border: .0625rem;
+}
+
+/* Styles merged from Gerador.module.css */
+.gerador{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+    padding: 1.875rem;
+    border-radius: .5rem;
+    border-left: .2rem solid #40C057;
+    border-top-left-radius: 0.01rem;
+    border-bottom-left-radius: 0.01rem;
+    width: 250px;
+}
+
+.gerador input{
+    padding:5px 0px 5px 5px;
+    border-radius: 3px;
+    border-style:solid;
+    width: 100%;
+    background-color: #f7f6f9;
+    border: 1px solid rgb(236, 236, 236);
+}
+
+.gerador textarea{
+    padding: 5px 0px 5px 5px;
+    border-radius: 3px;
+    border-style: solid;
+    width: 100%;
+    background-color: #f7f6f9;
+    border: 1px solid rgb(236, 236, 236);
+}
+
+section{
+    background-color: white;
+}
+
+section div{
+    background-color: white;
+}

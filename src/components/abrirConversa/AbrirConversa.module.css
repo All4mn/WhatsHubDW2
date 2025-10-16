@@ -24,9 +24,20 @@
     border: 1px solid rgb(236, 236, 236);
 }
 
-/* .copiar{
-    a fazer
-} */
+.copiar{
+    color: #1ac257;
+    font-size: large;
+    background-color: rgb(236, 236, 236);
+}
+svg{
+    background-color: rgb(236, 236, 236);
+    
+}
+
+path{
+    background-color: rgb(236, 236, 236);
+    
+}
 
 .abrir_whatsapp{
     background-color: #1ac257;
