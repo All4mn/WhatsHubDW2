@@ -5,8 +5,15 @@
     <title>WhatsHub</title>
     <script type="module" crossorigin src="./main.js"></script>
     <link rel="stylesheet" crossorigin href="./main.css">
+
+    <style>
+      html, body, #root { min-width: 650px !important; width: auto !important; overflow: visible !important; }
+      body { box-sizing: border-box !important; }
+      #root > * { max-width: none !important; min-width: 0 !important; }
+      * { overflow: visible !important; }
+    </style>
   </head>
   <body>
     <div id="root"></div>
   </body>
-</html>
+</html> 
