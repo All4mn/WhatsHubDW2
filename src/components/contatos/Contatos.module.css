@@ -7,7 +7,7 @@
     justify-content: space-between;
     border-radius: .1875rem;
     margin: .5rem;
-    width: 100%;
+    /* width: 100%; */
     /* max-width: 34rem; */
 }
 
@@ -22,7 +22,6 @@
 .dados{
     background-color: #f7f6f9;
     min-width: 18rem;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -31,7 +30,6 @@
 
 .dados>div{
     display: flex;
-    width: 100%;
 }
 
 svg{
@@ -98,12 +96,12 @@ span{
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    
+    width: 35rem;
     margin-bottom: 0.5rem;
     border-radius: .5rem;
 }
 
-/* Styles from ListaContatos.module.css */
+/* Styles de ListaContatos.module.css */
 .lista{
     display: flex;
     flex-direction: column;
@@ -116,7 +114,7 @@ span{
     border-top-right-radius: 0.01rem;
     width: 100%;
     max-width: 38rem;
-    height: 12rem;
+    height: auto;
     margin-bottom: 1.5rem;
     background-color: white;
     font-family: "Questrial", sans-serif;
@@ -140,6 +138,21 @@ span{
 }
 
 /* Ensure heading/background rules from Lista are present */
-h2{background-color: white}
+h2{background-color: white;
+margin-bottom: 0.5rem;
+}
 h4{background-color: white}
 p{background-color: white}
+
+.pesquisa{
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid rgb(236, 236, 236);
+    width: 100%;
+    max-width: 35rem;
+    background-color: #f7f6f9;
+    font-family: "Questrial", sans-serif;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+}

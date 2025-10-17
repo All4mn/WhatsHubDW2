@@ -71,7 +71,8 @@ export default function Contatos(props) {
 
       <div>
         <input type="text" 
-        placeholder="pesquisar um nome"
+        className={styles.pesquisa}
+        placeholder="Pesquisar contato pelo nome"
         value={buscaNome}
         onChange={handlePesquisa} />
       </div>

@@ -59,7 +59,7 @@ div input{
     border-left: .2rem solid #40C057;
     border-top-left-radius: 0.01rem;
     border-bottom-left-radius: 0.01rem;
-    width: 34rem;
+    width: 25rem;
     /* max-width: 18rem; */
     background-color: white;
 }
@@ -88,4 +88,13 @@ section{
 
 section div{
     background-color: white;
+}
+
+.padrao{
+    background-color: white;
+    color: gray;
+    border-radius: .3125rem;
+    border-color: rgb(236, 236, 236);
+    margin-bottom: .6rem;
+    margin-top: 0.2rem;
 }

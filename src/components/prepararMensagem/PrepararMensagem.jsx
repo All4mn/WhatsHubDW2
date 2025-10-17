@@ -76,7 +76,19 @@ export default function PrepararMensagem(props) {
         </div>
         <div>
           <p>Mensagem(opcional)</p>
+          <textarea
+            name=""
+            id=""
+            value={mensagem}
+            onChange={(e) => {
+              setSelectedPreset(""); // limpa o preset quando digitar
+              setMensagem(e.target.value);
+            }}
+            className={styles.msg}
+            placeholder="Digite sua mensagem aqui..."
+          ></textarea>
           <select
+            className={styles.padrao}
             value={selectedPreset}
             onChange={(e) => {
               setSelectedPreset(e.target.value);
@@ -90,18 +102,6 @@ export default function PrepararMensagem(props) {
               </option>
             ))}
           </select>
-
-          <textarea
-            name=""
-            id=""
-            value={mensagem}
-            onChange={(e) => {
-              setSelectedPreset(""); // limpa o preset quando digitar
-              setMensagem(e.target.value);
-            }}
-            className={styles.msg}
-            placeholder="Digite sua mensagem aqui..."
-          ></textarea>
         </div>
         <button className={styles.enviar} onClick={linkGenerator}>
           Preparar mensagem{" "}
