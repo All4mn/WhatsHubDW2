@@ -76,7 +76,7 @@
     border-right: .2rem solid #40C057;
     border-top-right-radius: 0.01rem;
     border-bottom-right-radius: 0.01rem;
-    width: 85%;
+    width: 100%;
     /* max-width: 18rem;  */
     /* more compact */
     height: 26rem;
@@ -105,3 +105,9 @@
 p{background-color: white}
 h4{background-color: white}
 h2{background-color: white}
+
+@media (max-width:950px) {
+    .agenda{
+        width: 85%;
+    }
+}

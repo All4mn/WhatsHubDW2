@@ -59,7 +59,7 @@ div input{
     border-left: .2rem solid #40C057;
     border-top-left-radius: 0.01rem;
     border-bottom-left-radius: 0.01rem;
-    width: 85%;
+    width: 100%;
     /* max-width: 18rem; */
     background-color: white;
 }
@@ -97,4 +97,10 @@ section div{
     border-color: rgb(236, 236, 236);
     margin-bottom: .6rem;
     margin-top: 0.2rem;
+}
+
+@media (max-width:950px) {
+    .gerador{
+        width: 85%;
+    }
 }

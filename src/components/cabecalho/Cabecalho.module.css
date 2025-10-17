@@ -21,11 +21,12 @@
 }
 
 .subtitulo{
+    box-sizing: border-box;
     display: flex;
     justify-content: center;
-    background-color: aqua;
+    /* background-color: aqua; */
     font-weight: 400;
-    width: 100%;
+    /* width: 100%; */
     font-size: 1rem;
     font-family: "Questrial", sans-serif;
     white-space: pre;

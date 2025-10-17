@@ -25,6 +25,7 @@
     background-color: #f7f6f9;
     /* min-width: 18rem; */
     /* display: flex; */
+
     width: 100%;
     justify-content: space-around;
     flex-direction: column;
@@ -46,27 +47,31 @@ svg{
     font-family: "Questrial", sans-serif;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: white;
+    justify-content:space-around;
+    background-color: rgb(255, 255, 255);
     border-radius: 5rem;
     padding: 0.2rem;
 }
 
 .icons{
+    /* background-color: #9b8fb3; */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    width: 1000px;
     align-items: center;
     width: 5.5rem;
-    margin-right: 2rem;
     
 }
 
 .icon{
-    display: grid;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     fill: #40C057;
-    width: 1.5rem; /* tamanho do svg */
-    height: 1.5rem; /* tamanho do svg */
-    display: inline-block;
+    /* width: 1.5rem; tamanho do svg */
+    /* height: 2.5rem; tamanho do svg */
+    /* display: inline-block; */
     vertical-align: middle;
     text-align: center;
     margin-right: .625rem;
@@ -86,20 +91,21 @@ p{
 }
 
 span{
-    font-size: 0.95rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: grey;
     background-color: #f7f6f900;
     display: flex;
     justify-content: flex-start;
-    width: 8rem;
-    margin-right: 0.9rem;
+    /* width: 8rem; */
+    /* margin-right: 0.9rem; */
 }
 
 .container{
-    box-sizing: border-box;
+    /* background-color: #2a1653; */
+    /* box-sizing: border-box; */
     display: flex;
-    
+    gap: .1875rem;
     justify-content: space-around;
     align-items: center;
     /* flex-direction: row; */
@@ -162,7 +168,7 @@ p{background-color: white}
     border: 1px solid rgb(236, 236, 236);
     width: 100%;
     /* max-width: 35rem; */
-    background-color: #2a1653;
+    background-color: #ffffff;
     font-family: "Questrial", sans-serif;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -173,4 +179,15 @@ p{background-color: white}
     display: flex;
     justify-content: start;
     width: 100%;
+}
+
+@media (max-width: 950px) {
+    .container{
+        flex-direction: column;
+    }
+    .icons{
+        display: flex;
+        justify-content:space-around;
+        width: 100%;
+    }
 }
