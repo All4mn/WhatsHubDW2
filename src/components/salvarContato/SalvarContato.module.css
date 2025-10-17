@@ -71,7 +71,7 @@ select{
     border-right: .2rem solid #40C057;
     border-top-right-radius: 0.01rem;
     border-bottom-right-radius: 0.01rem;
-    width: 100%;
+    /* width: 100%; */
     max-width: 18rem; /* more compact */
     height: 20rem;
     background-color: white;
