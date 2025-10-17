@@ -36,14 +36,14 @@ export default function PrepararMensagem(props) {
       return;
     }
     if (numero.length == 9) {
-      setLink(`https://wa.me/33${numero}?text=${mensagem}`);
+      setLink(`https://wa.me/33${numero}?text=${mensagem.replace(/ /g, '%20')}`);
       return;
     }
     if (numero.length == 10) {
-      setLink(`https://wa.me/1${numero}?text=${mensagem}`);
+      setLink(`https://wa.me/1${numero}?text=${mensagem.replace(/ /g, '%20')}`);
       return;
     }
-    setLink(`https://wa.me/55${numero}?text=${mensagem}`);
+    setLink(`https://wa.me/55${numero}?text=${mensagem.replace(/ /g, '%20')}`);
   };
 
   return (
