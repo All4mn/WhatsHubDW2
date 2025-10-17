@@ -9,11 +9,12 @@
 .salvar_na_agenda{
     padding: 0.5rem;
     border: 1px solid white;
-    border-radius: 3px;
     margin-top: 10px;
     width: 100%;
+    border-radius: 3px;
     max-width: 25rem;
     font-family: 'questrial', sans-serif;
+    background-color: #40C057;
 }
 
 .numero{
@@ -22,7 +23,7 @@
     gap: 0.5rem;
     margin-top: 10px;
     margin-bottom: 20px;
-
+    
 }
 
 /* .pais{
@@ -32,42 +33,43 @@
     background-color: #f7f6f9;
     border: 1px solid rgb(236, 236, 236);
     height: 2.1rem;
-} */
-
-select{
-    padding:5px 5px 5px 5px;
-    border-radius: 3px;
-    border-style:solid;
-    background-color: #f7f6f9;
-    border: 1px solid rgb(236, 236, 236);
-    height: 2.1rem;
-    width: 100%;
-    font-family: 'questrial', sans-serif;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.nome{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.botao{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #40C057;
-}
-
-.agenda{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem; /* reduced */
-    padding: 1rem; /* reduced */
+    } */
+    
+    select{
+        padding:5px 5px 5px 5px;
+        border-radius: 3px;
+        border-style:solid;
+        background-color: #f7f6f9;
+        border: 1px solid rgb(236, 236, 236);
+        height: 2.1rem;
+        width: 100%;
+        font-family: 'questrial', sans-serif;
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nome{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .botao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #40C057;
+        border-radius: 3px;
+    }
+    
+    .agenda{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem; /* reduced */
+        padding: 1rem; /* reduced */
     border-radius: .5rem;
     border-right: .2rem solid #40C057;
     border-top-right-radius: 0.01rem;
