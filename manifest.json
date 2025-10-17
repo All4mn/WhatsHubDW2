@@ -5,11 +5,11 @@
   "description": "Extensão React + Vite",
   "action": {
   "default_popup": "popup.html",
-  "default_icon": "./WhatsHub-Icon.png"
+  "default_icon": "C:\\Users\\annaf\\OneDrive\\Documentos\\GitHub\\TrabalhoContatosDW2\\dist\\WhatsHub-Icon.png"
   },
   "icons": {
-    "48": "./WhatsHub-Icon.png",
-    "128": "./WhatsHub-Icon.png"
+    "48": "C:\\Users\\annaf\\OneDrive\\Documentos\\GitHub\\TrabalhoContatosDW2\\dist\\WhatsHub-Icon.png",
+    "128": "C:\\Users\\annaf\\OneDrive\\Documentos\\GitHub\\TrabalhoContatosDW2\\dist\\WhatsHub-Icon.png"
   },
   "permissions": ["storage", "tabs"]
 }
