@@ -30,7 +30,6 @@
 
 .dados>div{
     display: flex;
-    width: 100%;
 }
 
 svg{
@@ -102,7 +101,7 @@ span{
     border-radius: .5rem;
 }
 
-/* Styles from ListaContatos.module.css */
+/* Styles de ListaContatos.module.css */
 .lista{
     display: flex;
     flex-direction: column;
@@ -113,7 +112,7 @@ span{
     border-left: .2rem solid #40C057;
     border-top-left-radius: 0.01rem;
     border-top-right-radius: 0.01rem;
-    width: 100%;
+    /* width: 100%; */
     max-width: 38rem;
     height: 12rem;
     margin-bottom: 1.5rem;
