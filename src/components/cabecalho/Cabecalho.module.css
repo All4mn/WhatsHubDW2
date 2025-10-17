@@ -48,9 +48,13 @@
     max-width: 41rem;
 }
 
-@media (max-width:650px) {
+@media (max-width:950px) {
     .cabecalho{
         width: 50%;
+    }
+    .subtitulo{
+        width: 30px;
+        word-wrap: normal;
     }
 }
 

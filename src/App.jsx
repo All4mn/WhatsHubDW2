@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <div className='container-app'>
-        <Cabecalho/>
+        {/* <Cabecalho/> */}
         <Body/>
       </div>
     </>

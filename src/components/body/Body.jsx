@@ -3,6 +3,7 @@ import SalvarContato from "../salvarContato/SalvarContato";
 import Contatos from "../contatos/Contatos";
 import PrepararMensagem from "../prepararMensagem/PrepararMensagem";
 import { useState } from "react";
+import Cabecalho from "../cabecalho/Cabecalho";
 
 export default function Body() {
   const [contatos, setContatos] = useState([]);
@@ -32,6 +33,7 @@ export default function Body() {
   return (
     <>
       <div className={styles.container}>
+        <Cabecalho/>
         <div className={styles.secaoum}>
           <PrepararMensagem
             contatos={contatos}
