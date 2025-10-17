@@ -42,6 +42,7 @@ Além disso, pode ser instalado como extensão do Google Chrome, tornando o aces
 
 
 5- Após isso, uma pasta chamada “dist” (ou “build”) será criada. Arraste os arquivos manifest.json e background.js para dentro dessa pasta.
+(se essa pasta ja vier com os arquivos baixados, apenas confira quais arquivos vem dentro dela)
 
 6- Abra seu navegador (Opera GX ou Chrome). Na barra de pesquisa, digite:
 
