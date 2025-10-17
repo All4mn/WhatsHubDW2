@@ -1,54 +1,79 @@
-👥Grupo: Allan Guilherme, Mateus Augusuto e Anna Luísa Delconte
-🚀Projeto: WhatsHub
-📖Materia: Desenvolvimento Web 2
-👨‍🏫Professor: Rafael Liberato
+👥 Grupo: Allan Guilherme, Mateus Augusto e Anna Luísa Delconte
+🚀 Projeto: WhatsHub
+📖 Matéria: Desenvolvimento Web 2
+👨‍🏫 Professor: Rafael Liberato
 
----------//---------//---------//---------//---------//---------//---------//---------//---------
+<---------//---------//---------//---------//---------//---------//---------//---------//--------->
 
-O que é o WhatsHub?
-WhatsHub é um site e extensão para navegador que tem como objetivo organizar sua agenda de contatos e gerar links rápidos para qualquer conversas a qualquer momento. Com sua responsividade, o WhatsHub suporta tambem acesso remoto pelo celular, sendo uma ótima opção para quem vive com a agenda bagunçada.
+🧭 O que é o WhatsHub?
 
-Por que usar WhatsHub?
-WhatsHub deixa
+O WhatsHub é um site e extensão para navegador que tem como objetivo organizar sua agenda de contatos e gerar links rápidos para qualquer conversa a qualquer momento.
+Com sua responsividade, o WhatsHub também suporta acesso remoto pelo celular, sendo uma ótima opção para quem vive com a agenda bagunçada.
 
-Acesse em: https://whats-hub-dw-2.vercel.app/
+⚡ Por que usar o WhatsHub?
 
-Ou baixe como extensão seguindo o seguinte passo a passo:
+Porque ele torna sua comunicação mais ágil e organizada.
+O WhatsHub elimina a necessidade de procurar contatos manualmente, gera links prontos e mensagens pré-planejadas em segundos e permite acesso de qualquer dispositivo.
+Além disso, pode ser instalado como extensão do Google Chrome, tornando o acesso ainda mais rápido e integrado à sua navegação diária.
+É praticidade e produtividade em um só clique.
 
-1- Acesse o repositório hospedado: https://github.com/All4mn/WhatsHubDW2
+🌐 Acesse em:
 
-2- Baixe os arquivos e pastas presentes
+🔗 https://whats-hub-dw-2.vercel.app/
 
-3- Abra os arquivos em seu Visual Studios e rie um arquivo chamado '.env', dentro dele, crie duas variaveis,
-    VITE_SUPABASE_URL= "https://cmiqfrksphslfqcfwaar.supabase.co"
-    VITE_SUPABASE_KEY= "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNtaXFmcmtzcGhzbGZxY2Z3YWFyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc5NTkxNDQsImV4cCI6MjA3MzUzNTE0NH0.ZTFyBe2NEP9-VPp4zp9UU3coy1PM1FnCc_gKsuxkbac"
-
-    (Ambas presentes no projeto criado em: https://supabase.com/dashboard/project/cmiqfrksphslfqcfwaar)
-
-4- Abra o terminal, localize a pasta do projeto e execute o comando 'npm run build' 
-
-5- Após isso, uma pasta chamada 'dist' ou 'build' aparecerá, arraste os arquivos manifest.json e background.js para dentro da pasta criada
-
-6- Abra seu navegador, seja Ópera GX ou Chrome
-
-7- Na barra de pesquisa, digite "chrome://extensions"
-
-8- Ative o "Modo de desenvolvedor" (Developer mode) no canto superior direito da página. 
-
-9- Clique em "Carregar sem compactação" e selecione a pasta do projeto.
-
-10- Pronto! Sua nova extensão está funcional!
-
----------//---------//---------//---------//---------//---------//---------//---------//---------
-
-Caso voce queira, o site pode ser rodado localmente pela máquina do usuário seguindo os seguintes passos
+💻 Ou baixe como extensão seguindo o passo a passo:
 
 1- Acesse o repositório hospedado: https://github.com/All4mn/WhatsHubDW2
 
-2- Baixe os arquivos e pastas presentes
+2- Baixe os arquivos e pastas presentes.
 
-3- Abra os arquivos em seu Visual Studios, localize a pasta no seu terminal e execute o comando 'npm run dev'
+3- Abra os arquivos no Visual Studio Code e crie um arquivo chamado “.env”. Dentro dele, crie duas variáveis:
 
--> Se persistir no erro, aplique o comando 'npm i' no terminal e repita o passo 3 novamente
+    VITE_SUPABASE_URL="https://cmiqfrksphslfqcfwaar.supabase.co"
 
----------//---------//---------//---------//---------//---------//---------//---------//---------
+    VITE_SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNtaXFmcmtzcGhzbGZxY2Z3YWFyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc5NTkxNDQsImV4cCI6MjA3MzUzNTE0NH0.ZTFyBe2NEP9-VPp4zp9UU3coy1PM1FnCc_gKsuxkbac"
+
+
+(Ambas estão presentes no projeto criado em: https://supabase.com/dashboard/project/cmiqfrksphslfqcfwaar)
+
+4 -Abra o terminal, localize a pasta do projeto e execute o comando:
+
+    npm run build
+
+
+5- Após isso, uma pasta chamada “dist” (ou “build”) será criada. Arraste os arquivos manifest.json e background.js para dentro dessa pasta.
+
+6- Abra seu navegador (Opera GX ou Chrome). Na barra de pesquisa, digite:
+
+    chrome://extensions
+
+
+7- Ative o Modo de desenvolvedor (Developer Mode) no canto superior direito da página.
+
+8- Clique em “Carregar sem compactação” e selecione a pasta do projeto.
+
+9- Pronto! Sua nova extensão está funcional. ✅
+
+<---------//---------//---------//---------//---------//---------//---------//---------//--------->
+
+🖥️ Caso queira rodar o site localmente na sua máquina:
+
+1- Acesse o repositório hospedado: https://github.com/All4mn/WhatsHubDW2
+
+2- Baixe os arquivos e pastas presentes.
+
+3- Crie um arquivo chamado .env, Dentro dele cole as variaveis de ambiente:
+
+    VITE_SUPABASE_URL="https://cmiqfrksphslfqcfwaar.supabase.co"
+
+    VITE_SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNtaXFmcmtzcGhzbGZxY2Z3YWFyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTc5NTkxNDQsImV4cCI6MjA3MzUzNTE0NH0.ZTFyBe2NEP9-VPp4zp9UU3coy1PM1FnCc_gKsuxkbac"
+
+
+3- Abra os arquivos no Visual Studio Code, localize a pasta no terminal e execute o comando:
+
+    npm run dev
+
+
+➜ Se o erro persistir, execute o comando abaixo e repita o passo 3:
+
+    npm i
