@@ -8,13 +8,14 @@
 
 .salvar_na_agenda{
     padding: 0.5rem;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin-top: 10px;
     width: 100%;
     border-radius: 3px;
     max-width: 25rem;
     font-family: 'questrial', sans-serif;
-    background-color: #40C057;
+    background-color: #1AC257;
+    
 }
 
 .numero{
@@ -61,7 +62,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #40C057;
+        background-color: #1AC257;
         border-radius: 3px;
     }
     
