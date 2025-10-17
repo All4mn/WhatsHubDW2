@@ -138,7 +138,9 @@ span{
 }
 
 /* Ensure heading/background rules from Lista are present */
-h2{background-color: white}
+h2{background-color: white;
+margin-bottom: 0.5rem;
+}
 h4{background-color: white}
 p{background-color: white}
 
@@ -152,4 +154,5 @@ p{background-color: white}
     font-family: "Questrial", sans-serif;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    margin-left: 1rem;
 }
