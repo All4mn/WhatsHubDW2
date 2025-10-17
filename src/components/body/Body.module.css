@@ -13,6 +13,15 @@
 .secaoum{
     display: flex;
     flex-direction: row;
+    justify-content: stretch;
     gap: 0.625rem;
 
+}
+
+@media (max-width:900px) {
+    .secaoum{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }

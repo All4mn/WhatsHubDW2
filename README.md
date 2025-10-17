@@ -13,7 +13,7 @@ Com sua responsividade, o WhatsHub também suporta acesso remoto pelo celular, s
 ⚡ Por que usar o WhatsHub?
 
 Porque ele torna sua comunicação mais ágil e organizada.
-O WhatsHub elimina a necessidade de procurar contatos manualmente, gera links prontos e mensagens pré-planejadas em segundos e permite acesso de qualquer dispositivo.
+O WhatsHub elimina a necessidade de procurar contatos manualmente com sua opção de pesquisa e filtragem, gera links prontos e funcionais para qualquer conversa e inicia tópicos mais facilmente com as mensagens automáticas. E com sua responsividade, WhatsHub permite acesso de qualquer dispositivo.
 Além disso, pode ser instalado como extensão do Google Chrome, tornando o acesso ainda mais rápido e integrado à sua navegação diária.
 É praticidade e produtividade em um só clique.
 
