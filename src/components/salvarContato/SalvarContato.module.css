@@ -73,7 +73,7 @@ select{
     border-bottom-right-radius: 0.01rem;
     width: 100%;
     max-width: 18rem; /* more compact */
-    height: 20rem;
+    height: 30rem;
     background-color: white;
     font-family: "Questrial", sans-serif;
 }
