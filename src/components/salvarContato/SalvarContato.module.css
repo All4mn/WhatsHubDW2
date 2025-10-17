@@ -7,7 +7,7 @@
 }
 
 .salvar_na_agenda{
-    padding: 0.5rem;
+    padding: 0.63rem;
     border: 1px solid #1AC257;
     margin-top: 10px;
     width: 100%;
@@ -63,7 +63,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #1AC257;
+        /* background-color: #1AC257; */
         border-radius: 3px;
     }
     
