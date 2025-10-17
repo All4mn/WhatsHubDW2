@@ -5,11 +5,11 @@
   "description": "Extensão React + Vite",
   "action": {
   "default_popup": "popup.html",
-  "default_icon": "WppHub-icon.png"
+  "default_icon": "WhatsHub-Icon.png"
   },
   "icons": {
-    "48": "WppHub-icon.png",
-    "128": "WppHub-icon.png"
+    "48": "WhatsHub-Icon.png",
+    "128": "WhatsHub-Icon.png"
   },
   "permissions": ["storage", "tabs"]
 }
