@@ -71,7 +71,7 @@
         display: flex;
         flex-direction: column;
         gap: 0.5rem; /* reduced */
-        padding-right: 1rem; /* reduced */
+        padding: 1rem; /* reduced */
     border-radius: .5rem;
     border-right: .2rem solid #40C057;
     border-top-right-radius: 0.01rem;
