@@ -112,9 +112,9 @@ span{
     border-left: .2rem solid #40C057;
     border-top-left-radius: 0.01rem;
     border-top-right-radius: 0.01rem;
-    /* width: 100%; */
+    width: 100%;
     max-width: 38rem;
-    height: 12rem;
+    height: auto;
     margin-bottom: 1.5rem;
     background-color: white;
     font-family: "Questrial", sans-serif;
