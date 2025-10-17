@@ -16,12 +16,14 @@ export default function Cabecalho() {
           </svg>
           WhatsHub
         </h1>
-        <h5 className={styles.subtitulo}>
-          O jeito mais rápido de iniciar conversas pelo Whatsapp. Gere links
+        <div className={styles.subtitulo}>
+        <h5>
+          O jeito mais rápido de iniciar conversas pelo Whatsapp. 
+          <br />Gere links
           instantâneos e
-          <br />
           mantenha seus contatos organizados
         </h5>
+        </div>
       </header>
     </>
   );

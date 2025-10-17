@@ -22,13 +22,21 @@
 
 .subtitulo{
     display: flex;
+    justify-content: center;
+    background-color: aqua;
     font-weight: 400;
+    width: 100%;
     font-size: 1rem;
     font-family: "Questrial", sans-serif;
     white-space: pre;
     margin-top: 1rem;
     margin-bottom: 1.3rem;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+
+
 
 .cabecalho{
     justify-content: center;
@@ -44,17 +52,19 @@
     border-top: .2rem solid #40C057;
     border-left: .2rem solid #40C057;
     border-right: .2rem solid #40C057;
-    width: 100%;
+    width: 50%;
     max-width: 41rem;
+    word-break: break-all;
+    word-wrap: normal;
+    overflow-wrap: break-word;
 }
 
 @media (max-width:950px) {
     .cabecalho{
-        width: 50%;
+        width: 96%;
     }
     .subtitulo{
-        width: 30px;
-        word-wrap: normal;
+        font-size: x-small;
     }
 }
 

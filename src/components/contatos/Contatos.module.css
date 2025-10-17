@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Quicksand:wght@300..700&display=swap');
 .contatos{
+    box-sizing: border-box;
     padding: 0.75rem; /* reduced */
     background-color: #f7f6f9;
     border:1px solid rgb(236, 236, 236);
@@ -7,7 +8,7 @@
     justify-content: space-between;
     border-radius: .1875rem;
     margin: .5rem;
-    /* width: 100%; */
+    width: 100%;
     /* max-width: 34rem; */
 }
 
@@ -20,9 +21,11 @@
 }
 
 .dados{
+    box-sizing: border-box;
     background-color: #f7f6f9;
-    min-width: 18rem;
-    display: flex;
+    /* min-width: 18rem; */
+    /* display: flex; */
+    width: 100%;
     justify-content: space-around;
     flex-direction: column;
     align-items: right;
@@ -59,6 +62,7 @@ svg{
 }
 
 .icon{
+    display: grid;
     fill: #40C057;
     width: 1.5rem; /* tamanho do svg */
     height: 1.5rem; /* tamanho do svg */
@@ -72,6 +76,7 @@ svg{
 }
 
 p{
+    box-sizing: border-box;
     font-family: "Quicksand", sans-serif;
     justify-content: flex-start;
     font-weight: 500;
@@ -92,18 +97,23 @@ span{
 }
 
 .container{
+    box-sizing: border-box;
     display: flex;
+    
     justify-content: space-around;
     align-items: center;
-    flex-direction: row;
-    width: 35rem;
+    /* flex-direction: row; */
+    width: 100%;
     margin-bottom: 0.5rem;
     border-radius: .5rem;
 }
 
 /* Styles de ListaContatos.module.css */
 .lista{
+    box-sizing: border-box;
     display: flex;
+    /* justify-content: center; */
+    align-items: center;
     flex-direction: column;
     padding: 1rem; /* reduced */
     border-radius: .5rem;
@@ -113,7 +123,7 @@ span{
     border-top-left-radius: 0.01rem;
     border-top-right-radius: 0.01rem;
     width: 100%;
-    max-width: 38rem;
+    /* max-width: 38rem; */
     height: auto;
     margin-bottom: 1.5rem;
     background-color: white;
@@ -121,14 +131,16 @@ span{
 }
 
 .lista input{
+    box-sizing: border-box;
     padding:5px 0px 5px 5px;
     border-radius: 3px;
     border: 1px solid rgb(236, 236, 236);
-    width: 100%;
+    /* width: 100%; */
     background-color: #f7f6f9;
 }
 
 .lista textarea{
+    box-sizing: border-box;
     padding: 5px 0px 5px 5px;
     border: 1px solid rgb(236, 236, 236);
     border-radius: 3px;
@@ -149,10 +161,16 @@ p{background-color: white}
     border-radius: 3px;
     border: 1px solid rgb(236, 236, 236);
     width: 100%;
-    max-width: 35rem;
-    background-color: #f7f6f9;
+    /* max-width: 35rem; */
+    background-color: #2a1653;
     font-family: "Questrial", sans-serif;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    margin-left: 1.2rem;
+    /* margin-left: 1.2rem;  */
+}
+
+.containerInput{
+    display: flex;
+    justify-content: start;
+    width: 100%;
 }

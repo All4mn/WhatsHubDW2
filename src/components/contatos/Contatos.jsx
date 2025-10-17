@@ -68,14 +68,14 @@ export default function Contatos(props) {
       {/* fazer css */}
 
       <h4>Seus contatos ({props.contatos.length})</h4>
+      <div className={styles.containerInput}>
 
-      <div>
         <input type="text" 
         className={styles.pesquisa}
         placeholder="Pesquisar contato pelo nome"
         value={buscaNome}
         onChange={handlePesquisa} />
-      </div>
+        </div>
 
       <section className={styles.contatos}>
         {carregando ? (

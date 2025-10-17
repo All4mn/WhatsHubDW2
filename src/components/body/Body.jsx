@@ -33,7 +33,7 @@ export default function Body() {
   return (
     <>
       <div className={styles.container}>
-        <Cabecalho/>
+        {/* <Cabecalho/> */}
         <div className={styles.secaoum}>
           <PrepararMensagem
             contatos={contatos}
