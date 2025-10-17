@@ -96,7 +96,7 @@ span{
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    width: 34rem;
+    width: 35rem;
     margin-bottom: 0.5rem;
     border-radius: .5rem;
 }
@@ -147,7 +147,7 @@ p{background-color: white}
     border-radius: 3px;
     border: 1px solid rgb(236, 236, 236);
     width: 100%;
-    max-width: 34rem;
+    max-width: 35rem;
     background-color: #f7f6f9;
     font-family: "Questrial", sans-serif;
     margin-bottom: 1rem;
