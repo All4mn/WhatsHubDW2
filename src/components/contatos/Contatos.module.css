@@ -22,7 +22,6 @@
 .dados{
     background-color: #f7f6f9;
     min-width: 18rem;
-    width: 100%;
     display: flex;
     justify-content: space-around;
     flex-direction: column;
