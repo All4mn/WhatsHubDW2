@@ -12,6 +12,8 @@ export default function Body() {
   const [triggerEdit, setTriggerEdit] = useState(false);
   const [editId, setEditId] = useState("");
 
+
+  console.log(styles)
   const formatacao = (numero) => {
     const num = numero;
     if (num.length == 9) {
